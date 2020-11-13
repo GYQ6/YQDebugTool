@@ -6,10 +6,10 @@ Pod::Spec.new do |spec|
   spec.summary      = "为iOS app开发提供的一个Debug工具 YQDebugTool."
   spec.homepage     = "https://github.com/gyg6/YQDebugTool"
   spec.license      = 'MIT'
-  spec.author             = { "gyq6" => "18738193980@163.com" }
+  spec.author       = { "gyq6" => "18738193980@163.com" }
   spec.ios.deployment_target = "9.0"
   spec.source       = { :git => "https://github.com/gyg6/YQDebugTool.git", :tag => "#{spec.version}" }
-  spec.source_files  = 'YQDebug/*.swift'
+  spec.source_files = 'YQDebug/*.swift'
   spec.requires_arc = true
   spec.dependency 'FLEX'
 
