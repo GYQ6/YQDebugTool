@@ -56,7 +56,7 @@ extension YQDebugModuleFPS {
         guard let window: UIWindow = YQDebugModuleFPS.getWindow() else { return false}
         for view in window.subviews {
             if view is YQFPSLabel {
-                window .bringSubviewToFront(view)
+                window.bringSubviewToFront(view)
                 return true
             }
         }
