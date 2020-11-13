@@ -23,7 +23,7 @@ class YQDebugListController: UIViewController {
     }
     
     func setupUI(){
-        self.title = "研途Debug工具"
+        self.title = "Debug工具"
         self.view.backgroundColor = UIColor.white
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "关闭", style: .done, target: self, action: #selector(closeDebugAction))
         self.view.addSubview(self.tableView)
