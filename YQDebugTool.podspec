@@ -12,5 +12,6 @@ Pod::Spec.new do |spec|
   spec.source_files = 'YQDebug/*.swift'
   spec.requires_arc = true
   spec.dependency 'FLEX'
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.0' }
 
 end
