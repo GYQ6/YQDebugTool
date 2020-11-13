@@ -6,6 +6,6 @@ target 'YQDebugTool' do
   use_frameworks!
 
   # Pods for YQDebugTool
-   pod 'FLEX', '~> 4.2.2'
+   pod 'FLEX'
 
 end
