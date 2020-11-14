@@ -7,5 +7,6 @@ target 'YQDebugTool' do
 
   # Pods for YQDebugTool
    pod 'FLEX'
+   #pod 'YQDebugTool'
 
 end
