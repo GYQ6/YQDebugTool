@@ -48,7 +48,7 @@ class YQDebugListController: UIViewController {
 extension YQDebugListController {
     
     @objc func closeDebugAction() {
-        self.navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
     
     func configCellUI(moduleName: String, cell: UITableViewCell) {
@@ -76,8 +76,7 @@ extension YQDebugListController {
                 moduleClass.hiddenSW()
             }
         }
-        let currentVC = YQDebugListController.yq_currentViewController()
-        currentVC?.navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
 }
 

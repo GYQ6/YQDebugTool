@@ -76,9 +76,6 @@ extension YQBaseURLController: UITableViewDelegate, UITableViewDataSource {
         UserDefaults.standard.setValue(buildConfiguration, forKeyPath: CacheBuildConfiguration)
         //切换环境的通知
         NotificationCenter.default.post(name: NSNotification.Name(ChangeBuildConfigurationNotification), object: nil, userInfo: nil)
-        guard let vieControllers = self.navigationController?.viewControllers else { return }
-        let index = vieControllers.count - 3
-        let toVC = vieControllers[index]
-        self.navigationController?.popToViewController(toVC, animated: true)
+        self.dismissToRootViewController()
     }
 }

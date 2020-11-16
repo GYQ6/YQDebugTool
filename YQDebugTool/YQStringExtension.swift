@@ -12,11 +12,14 @@ extension String {
     /// 获取命名空间
     /// - Returns: 项目命名空间
     public static func getProjectNameSpace() -> String {
+        /*
         guard let nameSpace = Bundle.main.infoDictionary?["CFBundleExecutable"] as? String else {
             print("命名空间失败")
             return ""
         }
-        return nameSpace
+        */
+        ///cocoapods 导入后 该模块的命名空间为 "YQDebugTool"
+        return "YQDebugTool"
     }
     
     /// 将类名字符串转为类

@@ -21,6 +21,6 @@ class YQDebugModuleFLEX: YQDebugBaseModule {
     override class func clickAction() {
         FLEXManager.shared.showExplorer()
         let currentVC = YQDebugListController.yq_currentViewController()
-        currentVC?.navigationController?.popViewController(animated: true)
+        currentVC?.dismiss(animated: true, completion: nil)
     }
 }

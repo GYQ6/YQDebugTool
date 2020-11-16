@@ -108,14 +108,14 @@
 		454F5A69255E321B0082CC6A /* YQDebugTool */ = {
 			isa = PBXGroup;
 			children = (
-				450826B9256211530032E931 /* CADisplayLinkExtension.swift */,
-				450826B4256211530032E931 /* YQBaseURLController.swift */,
 				450826B6256211530032E931 /* YQDebug.swift */,
-				450826B7256211530032E931 /* YQDebugBaseModule.swift */,
 				450826B2256211530032E931 /* YQDebugListController.swift */,
+				450826B4256211530032E931 /* YQBaseURLController.swift */,
+				450826B7256211530032E931 /* YQDebugBaseModule.swift */,
 				450826AF256211530032E931 /* YQDebugModuleBaseURL.swift */,
 				450826B0256211530032E931 /* YQDebugModuleFLEX.swift */,
 				450826B5256211530032E931 /* YQDebugModuleFPS.swift */,
+				450826B9256211530032E931 /* CADisplayLinkExtension.swift */,
 				450826AE256211530032E931 /* YQDebugModuleProtocol.swift */,
 				450826B3256211530032E931 /* YQFPSLabel.swift */,
 				450826B1256211530032E931 /* YQStringExtension.swift */,

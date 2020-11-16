@@ -8,17 +8,17 @@
 
 import UIKit
 
-typealias ObserverBuildConfigurationBlock = (_ buildName: YQBuilConfigurationEnum) -> Void
-enum YQBuilConfigurationEnum {
+public typealias ObserverBuildConfigurationBlock = (_ buildName: YQBuilConfigurationEnum) -> Void
+public enum  YQBuilConfigurationEnum {
     case YQDebug, YQPreRelease, YQRelease
 }
 let CacheBuildConfiguration = "CacheBuildConfiguration"
 let ChangeBuildConfigurationNotification = "ChangeBuildConfiguration"
 
-class YQDebug {
+public class YQDebug {
     
-    static let `default` = YQDebug()
-    var observerBuildConfigurationBlock: ObserverBuildConfigurationBlock?
+    public static let `default` = YQDebug()
+    public var observerBuildConfigurationBlock: ObserverBuildConfigurationBlock?
     var blackList: [String]? = ["YQBaseURLController", "YQDebugListController"]
     required init() {
         observerChangeBuildConfigurationNotification()
@@ -33,10 +33,12 @@ class YQDebug {
             guard (self.blackList?.contains( type(of: currentVC).description())) != nil else {
                 return
             }
+            let toNaVC = UINavigationController(rootViewController: debugVC)
+            
             if let naVC = currentVC as? UINavigationController {
-                naVC.pushViewController(debugVC, animated: true)
+                naVC.present(toNaVC, animated: true, completion: nil)
             }else {
-                currentVC.navigationController?.pushViewController(debugVC, animated: true)
+                currentVC.present(toNaVC, animated: true, completion: nil)
             }
         }
         
