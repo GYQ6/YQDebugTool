@@ -92,6 +92,7 @@ extension YQDebugListController: UITableViewDelegate, UITableViewDataSource {
         if cell == nil {
             cell = UITableViewCell(style:.subtitle, reuseIdentifier: "cell")
             let sw = UISwitch()
+            cell.selectionStyle = .none
             sw.addTarget(self, action: #selector(clickSwitchAction(sw:)), for: .valueChanged)
             cell.accessoryView = sw
         }

@@ -7,22 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		454F5A6B255E321B0082CC6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454F5A6A255E321B0082CC6A /* AppDelegate.swift */; };
-		454F5A6F255E321B0082CC6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454F5A6E255E321B0082CC6A /* ViewController.swift */; };
-		454F5A72255E321B0082CC6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 454F5A70255E321B0082CC6A /* Main.storyboard */; };
-		454F5A74255E321C0082CC6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 454F5A73255E321C0082CC6A /* Assets.xcassets */; };
-		454F5A77255E321C0082CC6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 454F5A75255E321C0082CC6A /* LaunchScreen.storyboard */; };
+		450826A5256211210032E931 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4508269D256211210032E931 /* ViewController.swift */; };
+		450826A9256211210032E931 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450826A3256211210032E931 /* AppDelegate.swift */; };
+		450826BA256211530032E931 /* YQDebugModuleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450826AE256211530032E931 /* YQDebugModuleProtocol.swift */; };
+		450826BB256211530032E931 /* YQDebugModuleBaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450826AF256211530032E931 /* YQDebugModuleBaseURL.swift */; };
+		450826BC256211530032E931 /* YQDebugModuleFLEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450826B0256211530032E931 /* YQDebugModuleFLEX.swift */; };
+		450826BD256211530032E931 /* YQStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450826B1256211530032E931 /* YQStringExtension.swift */; };
+		450826BE256211530032E931 /* YQDebugListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450826B2256211530032E931 /* YQDebugListController.swift */; };
+		450826BF256211530032E931 /* YQFPSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450826B3256211530032E931 /* YQFPSLabel.swift */; };
+		450826C0256211530032E931 /* YQBaseURLController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450826B4256211530032E931 /* YQBaseURLController.swift */; };
+		450826C1256211530032E931 /* YQDebugModuleFPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450826B5256211530032E931 /* YQDebugModuleFPS.swift */; };
+		450826C2256211530032E931 /* YQDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450826B6256211530032E931 /* YQDebug.swift */; };
+		450826C3256211530032E931 /* YQDebugBaseModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450826B7256211530032E931 /* YQDebugBaseModule.swift */; };
+		450826C4256211530032E931 /* YQUIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450826B8256211530032E931 /* YQUIViewControllerExtension.swift */; };
+		450826C5256211530032E931 /* CADisplayLinkExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450826B9256211530032E931 /* CADisplayLinkExtension.swift */; };
+		450826CD256213DF0032E931 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4508269E256211210032E931 /* Assets.xcassets */; };
+		450826CE256213DF0032E931 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4508269F256211210032E931 /* LaunchScreen.storyboard */; };
+		450826CF256213DF0032E931 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 450826A1256211210032E931 /* Main.storyboard */; };
 		8F83CA0C405CD762366F5030 /* Pods_YQDebugTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB730432B2CBC66589146C6 /* Pods_YQDebugTool.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4508269D256211210032E931 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4508269E256211210032E931 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		450826A0256211210032E931 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		450826A2256211210032E931 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		450826A3256211210032E931 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		450826A4256211210032E931 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		450826AE256211530032E931 /* YQDebugModuleProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQDebugModuleProtocol.swift; sourceTree = "<group>"; };
+		450826AF256211530032E931 /* YQDebugModuleBaseURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQDebugModuleBaseURL.swift; sourceTree = "<group>"; };
+		450826B0256211530032E931 /* YQDebugModuleFLEX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQDebugModuleFLEX.swift; sourceTree = "<group>"; };
+		450826B1256211530032E931 /* YQStringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQStringExtension.swift; sourceTree = "<group>"; };
+		450826B2256211530032E931 /* YQDebugListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQDebugListController.swift; sourceTree = "<group>"; };
+		450826B3256211530032E931 /* YQFPSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQFPSLabel.swift; sourceTree = "<group>"; };
+		450826B4256211530032E931 /* YQBaseURLController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQBaseURLController.swift; sourceTree = "<group>"; };
+		450826B5256211530032E931 /* YQDebugModuleFPS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQDebugModuleFPS.swift; sourceTree = "<group>"; };
+		450826B6256211530032E931 /* YQDebug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQDebug.swift; sourceTree = "<group>"; };
+		450826B7256211530032E931 /* YQDebugBaseModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQDebugBaseModule.swift; sourceTree = "<group>"; };
+		450826B8256211530032E931 /* YQUIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQUIViewControllerExtension.swift; sourceTree = "<group>"; };
+		450826B9256211530032E931 /* CADisplayLinkExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CADisplayLinkExtension.swift; sourceTree = "<group>"; };
 		454F5A67255E321B0082CC6A /* YQDebugTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YQDebugTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		454F5A6A255E321B0082CC6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		454F5A6E255E321B0082CC6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		454F5A71255E321B0082CC6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		454F5A73255E321C0082CC6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		454F5A76255E321C0082CC6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		454F5A78255E321C0082CC6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6750407C03641661DED52ED /* Pods-YQDebugTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YQDebugTool.release.xcconfig"; path = "Target Support Files/Pods-YQDebugTool/Pods-YQDebugTool.release.xcconfig"; sourceTree = "<group>"; };
 		ECDD8AA488E594FF62BA4BCA /* Pods-YQDebugTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YQDebugTool.debug.xcconfig"; path = "Target Support Files/Pods-YQDebugTool/Pods-YQDebugTool.debug.xcconfig"; sourceTree = "<group>"; };
 		FBB730432B2CBC66589146C6 /* Pods_YQDebugTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YQDebugTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,9 +73,23 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		4508269C256211210032E931 /* YQDebugDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4508269D256211210032E931 /* ViewController.swift */,
+				4508269E256211210032E931 /* Assets.xcassets */,
+				4508269F256211210032E931 /* LaunchScreen.storyboard */,
+				450826A1256211210032E931 /* Main.storyboard */,
+				450826A3256211210032E931 /* AppDelegate.swift */,
+				450826A4256211210032E931 /* Info.plist */,
+			);
+			path = YQDebugDemo;
+			sourceTree = "<group>";
+		};
 		454F5A5E255E321B0082CC6A = {
 			isa = PBXGroup;
 			children = (
+				4508269C256211210032E931 /* YQDebugDemo */,
 				454F5A69255E321B0082CC6A /* YQDebugTool */,
 				454F5A68255E321B0082CC6A /* Products */,
 				09C3366044EAA34010F6D059 /* Pods */,
@@ -70,12 +108,18 @@
 		454F5A69255E321B0082CC6A /* YQDebugTool */ = {
 			isa = PBXGroup;
 			children = (
-				454F5A6A255E321B0082CC6A /* AppDelegate.swift */,
-				454F5A6E255E321B0082CC6A /* ViewController.swift */,
-				454F5A70255E321B0082CC6A /* Main.storyboard */,
-				454F5A73255E321C0082CC6A /* Assets.xcassets */,
-				454F5A75255E321C0082CC6A /* LaunchScreen.storyboard */,
-				454F5A78255E321C0082CC6A /* Info.plist */,
+				450826B9256211530032E931 /* CADisplayLinkExtension.swift */,
+				450826B4256211530032E931 /* YQBaseURLController.swift */,
+				450826B6256211530032E931 /* YQDebug.swift */,
+				450826B7256211530032E931 /* YQDebugBaseModule.swift */,
+				450826B2256211530032E931 /* YQDebugListController.swift */,
+				450826AF256211530032E931 /* YQDebugModuleBaseURL.swift */,
+				450826B0256211530032E931 /* YQDebugModuleFLEX.swift */,
+				450826B5256211530032E931 /* YQDebugModuleFPS.swift */,
+				450826AE256211530032E931 /* YQDebugModuleProtocol.swift */,
+				450826B3256211530032E931 /* YQFPSLabel.swift */,
+				450826B1256211530032E931 /* YQStringExtension.swift */,
+				450826B8256211530032E931 /* YQUIViewControllerExtension.swift */,
 			);
 			path = YQDebugTool;
 			sourceTree = "<group>";
@@ -147,9 +191,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				454F5A77255E321C0082CC6A /* LaunchScreen.storyboard in Resources */,
-				454F5A74255E321C0082CC6A /* Assets.xcassets in Resources */,
-				454F5A72255E321B0082CC6A /* Main.storyboard in Resources */,
+				450826CD256213DF0032E931 /* Assets.xcassets in Resources */,
+				450826CE256213DF0032E931 /* LaunchScreen.storyboard in Resources */,
+				450826CF256213DF0032E931 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,28 +246,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				454F5A6F255E321B0082CC6A /* ViewController.swift in Sources */,
-				454F5A6B255E321B0082CC6A /* AppDelegate.swift in Sources */,
+				450826A9256211210032E931 /* AppDelegate.swift in Sources */,
+				450826C1256211530032E931 /* YQDebugModuleFPS.swift in Sources */,
+				450826C5256211530032E931 /* CADisplayLinkExtension.swift in Sources */,
+				450826BA256211530032E931 /* YQDebugModuleProtocol.swift in Sources */,
+				450826BD256211530032E931 /* YQStringExtension.swift in Sources */,
+				450826C3256211530032E931 /* YQDebugBaseModule.swift in Sources */,
+				450826BB256211530032E931 /* YQDebugModuleBaseURL.swift in Sources */,
+				450826A5256211210032E931 /* ViewController.swift in Sources */,
+				450826C4256211530032E931 /* YQUIViewControllerExtension.swift in Sources */,
+				450826BE256211530032E931 /* YQDebugListController.swift in Sources */,
+				450826BF256211530032E931 /* YQFPSLabel.swift in Sources */,
+				450826C2256211530032E931 /* YQDebug.swift in Sources */,
+				450826BC256211530032E931 /* YQDebugModuleFLEX.swift in Sources */,
+				450826C0256211530032E931 /* YQBaseURLController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		454F5A70255E321B0082CC6A /* Main.storyboard */ = {
+		4508269F256211210032E931 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				454F5A71255E321B0082CC6A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		454F5A75255E321C0082CC6A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				454F5A76255E321C0082CC6A /* Base */,
+				450826A0256211210032E931 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		450826A1256211210032E931 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				450826A2256211210032E931 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -353,7 +409,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AVVHC4G6JC;
-				INFOPLIST_FILE = YQDebugTool/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/YQDebugDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -374,7 +430,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AVVHC4G6JC;
-				INFOPLIST_FILE = YQDebugTool/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/YQDebugDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
