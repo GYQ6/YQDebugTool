@@ -7,6 +7,14 @@
 
 import UIKit
 
+var YQIPhoneX: Bool {
+    var tmp = false
+    if #available(iOS 11.0, *), let safeBottom = UIApplication.shared.keyWindow?.safeAreaInsets.bottom, safeBottom > 0 {
+        tmp = true
+    }
+    return tmp
+}
+
 class YQDebugModuleFPS: YQDebugBaseModule {
     deinit {
         YQDebugBaseModule.hiddenSW()
@@ -76,7 +84,8 @@ extension YQDebugModuleFPS {
         window.addSubview(label)
         window.bringSubviewToFront(label)
         var constraints = NSLayoutConstraint.constraints(withVisualFormat: "H:[label(60)]-0-|", options: [], metrics: ["margin": 4], views: ["label": label])
-        constraints.append(contentsOf: NSLayoutConstraint.constraints(withVisualFormat: "V:[label(20)]-0-|", options: [], metrics: ["margin": 4], views: ["label": label]))
+        let marginBottom = YQIPhoneX ? 34 : 0
+        constraints.append(contentsOf: NSLayoutConstraint.constraints(withVisualFormat: "V:[label(20)]-\(marginBottom)-|", options: [], metrics: ["margin": 4], views: ["label": label]))
         window.addConstraints(constraints)
         return label
     }

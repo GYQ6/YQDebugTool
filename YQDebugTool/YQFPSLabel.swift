@@ -19,6 +19,8 @@ class YQFPSLabel: UILabel {
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = UIColor.lightGray
+        self.layer.cornerRadius = 2
+        self.layer.masksToBounds = true
         configLink()
     }
     

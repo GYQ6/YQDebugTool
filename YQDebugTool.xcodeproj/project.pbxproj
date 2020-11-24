@@ -25,6 +25,7 @@
 		450826CE256213DF0032E931 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4508269F256211210032E931 /* LaunchScreen.storyboard */; };
 		450826CF256213DF0032E931 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 450826A1256211210032E931 /* Main.storyboard */; };
 		8F83CA0C405CD762366F5030 /* Pods_YQDebugTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB730432B2CBC66589146C6 /* Pods_YQDebugTool.framework */; };
+		D3DBAD49256D08DF00A382CF /* YQSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DBAD48256D08DF00A382CF /* YQSingle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		450826B9256211530032E931 /* CADisplayLinkExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CADisplayLinkExtension.swift; sourceTree = "<group>"; };
 		454F5A67255E321B0082CC6A /* YQDebugTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YQDebugTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6750407C03641661DED52ED /* Pods-YQDebugTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YQDebugTool.release.xcconfig"; path = "Target Support Files/Pods-YQDebugTool/Pods-YQDebugTool.release.xcconfig"; sourceTree = "<group>"; };
+		D3DBAD48256D08DF00A382CF /* YQSingle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQSingle.swift; sourceTree = "<group>"; };
 		ECDD8AA488E594FF62BA4BCA /* Pods-YQDebugTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YQDebugTool.debug.xcconfig"; path = "Target Support Files/Pods-YQDebugTool/Pods-YQDebugTool.debug.xcconfig"; sourceTree = "<group>"; };
 		FBB730432B2CBC66589146C6 /* Pods_YQDebugTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YQDebugTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -118,6 +120,7 @@
 				450826B9256211530032E931 /* CADisplayLinkExtension.swift */,
 				450826AE256211530032E931 /* YQDebugModuleProtocol.swift */,
 				450826B3256211530032E931 /* YQFPSLabel.swift */,
+				D3DBAD48256D08DF00A382CF /* YQSingle.swift */,
 				450826B1256211530032E931 /* YQStringExtension.swift */,
 				450826B8256211530032E931 /* YQUIViewControllerExtension.swift */,
 			);
@@ -258,6 +261,7 @@
 				450826BE256211530032E931 /* YQDebugListController.swift in Sources */,
 				450826BF256211530032E931 /* YQFPSLabel.swift in Sources */,
 				450826C2256211530032E931 /* YQDebug.swift in Sources */,
+				D3DBAD49256D08DF00A382CF /* YQSingle.swift in Sources */,
 				450826BC256211530032E931 /* YQDebugModuleFLEX.swift in Sources */,
 				450826C0256211530032E931 /* YQBaseURLController.swift in Sources */,
 			);

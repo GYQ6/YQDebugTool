@@ -58,11 +58,7 @@ extension YQBaseURLController: UITableViewDelegate, UITableViewDataSource {
             cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
         }
         cell.textLabel?.text = dataSource[indexPath.row]
-        var buildConfiguration: String!
-        if (UserDefaults.standard.object(forKey: CacheBuildConfiguration) as? String) != nil  {
-            buildConfiguration = UserDefaults.standard.object(forKey: CacheBuildConfiguration) as? String
-        }
-        if buildConfiguration == dataSource[indexPath.row] {
+        if let buildConfiguration: String = YQSingleManger.buildName, buildConfiguration == dataSource[indexPath.row] {
             cell.detailTextLabel?.text = "已选择"
         }else
         {
@@ -73,7 +69,7 @@ extension YQBaseURLController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let buildConfiguration = dataSource[indexPath.row]
-        UserDefaults.standard.setValue(buildConfiguration, forKeyPath: CacheBuildConfiguration)
+        YQSingleManger.buildName = buildConfiguration
         //切换环境的通知
         NotificationCenter.default.post(name: NSNotification.Name(ChangeBuildConfigurationNotification), object: nil, userInfo: nil)
         self.dismissToRootViewController()

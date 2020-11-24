@@ -15,7 +15,7 @@ class YQDebugModuleBaseURL: YQDebugBaseModule {
     }
     
     override class func moduleDetailName() -> String {
-        let buildConfiguretion = UserDefaults.standard.object(forKey: CacheBuildConfiguration) as? String ?? ""
+        let buildConfiguretion = YQSingleManger.buildName ?? ""
         return buildConfiguretion
     }
     
