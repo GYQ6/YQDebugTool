@@ -50,7 +50,7 @@ public class YQDebug {
     
     @objc func getChangeBuildConfigurationNotificationAction(noti: Notification) {
         ///修改环境
-        guard let buildConfiguration = UserDefaults.standard.object(forKey: CacheBuildConfiguration) as? String else { return }
+        guard let buildConfiguration = YQSingleManger.buildName else { return }
         switch buildConfiguration {
         case "测试环境":
             self.observerBuildConfigurationBlock?(.YQDebug)
@@ -61,6 +61,10 @@ public class YQDebug {
         default:
             self.observerBuildConfigurationBlock?(.YQRelease)
         }
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
 }
 
