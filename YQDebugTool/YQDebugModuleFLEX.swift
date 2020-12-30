@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import FLEX
+//import FLEX
 
 class YQDebugModuleFLEX: YQDebugBaseModule {
     
@@ -19,7 +19,7 @@ class YQDebugModuleFLEX: YQDebugBaseModule {
     }
     
     override class func clickAction() {
-        FLEXManager.shared.showExplorer()
+//        FLEXManager.shared.showExplorer()
         let currentVC = YQDebugListController.yq_currentViewController()
         currentVC?.dismiss(animated: true, completion: nil)
     }

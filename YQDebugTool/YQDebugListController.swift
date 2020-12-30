@@ -39,7 +39,7 @@ class YQDebugListController: UIViewController {
     }
     
     fileprivate func createDataSource() -> [Any] {
-        let array = ["YQDebugModuleBaseURL", "YQDebugModuleFLEX", "YQDebugModuleFPS"]
+        let array = ["YQDebugModuleBaseURL", "YQDebugModuleFPS"]
         return array
     }
 }

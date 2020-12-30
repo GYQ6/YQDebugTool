@@ -146,7 +146,6 @@
 				454F5A63255E321B0082CC6A /* Sources */,
 				454F5A64255E321B0082CC6A /* Frameworks */,
 				454F5A65255E321B0082CC6A /* Resources */,
-				4F0F586A9A79A9353A771399 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -203,23 +202,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4F0F586A9A79A9353A771399 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YQDebugTool/Pods-YQDebugTool-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YQDebugTool/Pods-YQDebugTool-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YQDebugTool/Pods-YQDebugTool-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7C4C2B17B0E4DF4071940477 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
