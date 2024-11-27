@@ -12,7 +12,7 @@ class YQDebugListController: UIViewController {
     lazy var dataSource: [Any] = createDataSource()
     
     deinit {
-        //print("YQDebugListController 释放")
+        
     }
     
     override func viewDidLoad() {
