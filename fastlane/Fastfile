@@ -1,0 +1,57 @@
+
+default_platform(:ios)
+
+# 计算buildNumber
+def updateProjectBuildNumber
+    currentTime = Time.new.strftime("%Y%m%d")
+    build = get_build_number()
+    if build.include?"#{currentTime}."
+    # => 为当天版本 计算迭代版本号
+    lastStr = build[build.length-2..build.length-1]
+    lastNum = lastStr.to_i
+    lastNum = lastNum + 1
+    lastStr = lastNum.to_s
+    if lastNum < 10
+    lastStr = lastStr.insert(0,"0")
+    end
+    build = "#{currentTime}.#{lastStr}"
+    else
+    # => 非当天版本 build 号重置
+    build = "#{currentTime}01"
+    end
+    puts("*************| 更新build #{build} |*************")
+    # => 更改项目 build 号
+    increment_build_number(
+        build_number: "#{build}"
+    )
+end
+
+def getCommitsResult
+    commits_result = changelog_from_git_commits(commits_count: 40, pretty: "-  %ad   %ae： %s", date_format: "short")
+    commits_result_new = commits_result.gsub(/coderhzz@163.com|18738193980@163.com|825525738@@qq.com/, 'coderhzz@163.com'=>'何志志', '18738193980@163.com'=>'郭宇琪', '825525738@@qq.com'=>'吴建')
+end
+
+platform :ios do
+  desc "Description of what the lane does"
+  project_scheme = "YQDebugTool"
+  version = get_version_number(xcodeproj: "YQDebugTool.xcodeproj", target: "YQDebugTool")
+  directory_time = Time.new.strftime("%Y-%m-%d")
+  packaging_time = Time.new.strftime("%Y-%m-%d %H:%M:%S")
+  lane :dev do
+    updateProjectBuildNumber
+    gym(
+        scheme:"#{project_scheme}",
+        workspace:"YQDebugTool.xcworkspace",
+        clean: true,
+        configuration:"Debug",
+        export_method:"development",
+        output_directory: "./fastlane/ipa/Development/Debug",
+        output_name: "YQDebugTool_#{version}_#{get_build_number()}.ipa",
+        silent:true,
+        include_symbols:true,
+    ) 
+    pgyer(api_key: "24337f79b96710a60f92b4b3cae72271", update_description: "测试包，Debug版，版本号：#{version}，build号：#{get_build_number()}，打包时间：#{packaging_time}\n\n----------⚠️ 更新以下内容 ⚠️----------\n#{getCommitsResult}")
+
+
+  end
+end
